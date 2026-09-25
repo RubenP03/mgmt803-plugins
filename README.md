@@ -13,8 +13,8 @@ Register the marketplace once:
 Then install whatever you need:
 
 ```
-/plugin install finance-data@mgmt803
 /plugin install voiceover@mgmt803
+/plugin install shoji2@mgmt803
 ```
 
 Or type `/plugin` alone to browse and install from the menu. Start a fresh
@@ -24,7 +24,6 @@ session after installing so the plugin's skills load.
 
 | Plugin | What it does |
 | --- | --- |
-| `finance-data@mgmt803` | Free prices, fundamentals, SEC filings, macro series and asset-pricing factors from Yahoo, Stooq, EDGAR, FRED, Ken French, FinnHub, FMP and US Treasury, saved as CSV. |
 | `critique@mgmt803` | Reviews work Claude produced and says what to do about it, with located evidence for every finding. Fans out several subagents. |
 | `elegant-pdf@mgmt803` | Flyers, programs, reports and handbooks as branded PDFs or JPEGs, rendered from a small HTML design system. |
 | `shoji2@mgmt803` | A Quarto reveal.js slide theme in plum, pale gray and dusty blue, set for text- and code-heavy decks. |
@@ -37,7 +36,7 @@ Each plugin lives in a folder named for its author, and `marketplace.json`
 points at it:
 
 ```
-kerryback/finance-data
+kerryback/critique
 kerryback/voiceover
 ...
 ```
