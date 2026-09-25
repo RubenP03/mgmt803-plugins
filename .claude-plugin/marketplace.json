@@ -1,0 +1,39 @@
+{
+  "name": "mgmt803",
+  "owner": {
+    "name": "Kerry Back"
+  },
+  "description": "Plugins for MGMT 803: free financial and economic data, a draft critique, elegant PDFs, the shoji2 slide theme, Smithers, and narrated slide videos.",
+  "plugins": [
+    {
+      "name": "finance-data",
+      "source": "./kerryback/finance-data",
+      "description": "Fetch free financial, market, and economic data (prices/OHLCV, fundamentals, SEC filings, macro time series, asset-pricing factors) from Yahoo, Stooq, SEC EDGAR, FRED, Ken French, FinnHub, FMP, and US Treasury, and save it as CSV."
+    },
+    {
+      "name": "critique",
+      "source": "./kerryback/critique",
+      "description": "Critique work Claude produced and say what to do about it. Parallel reviewer agents -- correctness traced back to the files that produced each number, clarity, a devil's advocate that reads the code rather than the prose, and a referee lane for academic papers that hands off to econ-review when it is installed. Every finding must carry located evidence, a consequence specific to this work, a proportionate repair, and a condition that would defeat it; Claude then argues against its own reviewers before showing you anything. Delivers an HTML guide that leads with the verdict and lays out the alternative paths forward -- narrow the claim, run one decisive check, reframe, redesign, or ship -- as choices with costs, not as a checklist. Heavyweight: it fans out multiple subagents."
+    },
+    {
+      "name": "elegant-pdf",
+      "source": "./kerryback/elegant-pdf",
+      "description": "Create elegant, branded documents from a small HTML design system rendered to PDF or image with headless Chrome \u2014 one-page flyers/announcements (2x JPEG or clickable PDF) and multi-page programs, reports, and handbooks (clickable PDF with cover, running footer, and page numbers). Default palette is Rice Business navy + gold; recolor by editing one block."
+    },
+    {
+      "name": "shoji2",
+      "source": "./kerryback/shoji2",
+      "description": "Shoji with a slimmer frame and smaller type. The same plum, pale-gray and dusty-blue Quarto reveal.js theme drawn from the Shoji PowerPoint design, with the rules thinned to 4px, the title band shallower, the seam narrower and the margins tightened \u2014 29% more text area on the same 1280\u00d7720 canvas, set at 28px instead of 32px. Same class vocabulary as shoji: cards, callouts, stats, numbered steps, compared columns, half-bleed picture layouts. Use it when a deck is text- or code-heavy and was fighting the panel's edges; use shoji when the deck is sparse and wants the air."
+    },
+    {
+      "name": "smithers",
+      "source": "./kerryback/smithers",
+      "description": "A personal email and calendar desk: your inbox split into what needs a reply, a 7-day calendar with multi-select delete, tasks, and a Compose tab. Claude Code reads your Gmail and Calendar through a local connector, writes a fresh overview of what\u2019s ahead for the next seven days every time the app is opened, and parks drafted replies in Compose \u2014 you review and press Send. Claude never sends mail and never deletes events."
+    },
+    {
+      "name": "voiceover",
+      "source": "./kerryback/voiceover",
+      "description": "Turn a slide deck into a narrated MP4 video plus a transcript. Give it the PDF of your slides \u2014 named on the command line or uploaded in the app \u2014 and Claude writes the narration; a local app shows each slide beside its script, where you edit it, pick an ElevenLabs voice, and generate. The MP4 + transcript are saved to the project folder."
+    }
+  ]
+}
