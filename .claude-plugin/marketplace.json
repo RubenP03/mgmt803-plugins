@@ -3,7 +3,7 @@
   "owner": {
     "name": "Kerry Back"
   },
-  "description": "Plugins for MGMT 803: a draft critique, elegant PDFs, the shoji2 slide theme, Smithers, and narrated slide videos.",
+  "description": "Plugins for MGMT 803: a draft critique, elegant PDFs, the shoji slide theme, Smithers, and narrated slide videos.",
   "plugins": [
     {
       "name": "critique",
@@ -16,9 +16,9 @@
       "description": "Create elegant, branded documents from a small HTML design system rendered to PDF or image with headless Chrome \u2014 one-page flyers/announcements (2x JPEG or clickable PDF) and multi-page programs, reports, and handbooks (clickable PDF with cover, running footer, and page numbers). Default palette is Rice Business navy + gold; recolor by editing one block."
     },
     {
-      "name": "shoji2",
-      "source": "./kerryback/shoji2",
-      "description": "Shoji with a slimmer frame and smaller type. The same plum, pale-gray and dusty-blue Quarto reveal.js theme drawn from the Shoji PowerPoint design, with the rules thinned to 4px, the title band shallower, the seam narrower and the margins tightened \u2014 29% more text area on the same 1280\u00d7720 canvas, set at 28px instead of 32px. Same class vocabulary as shoji: cards, callouts, stats, numbered steps, compared columns, half-bleed picture layouts. Use it when a deck is text- or code-heavy and was fighting the panel's edges; use shoji when the deck is sparse and wants the air."
+      "name": "shoji",
+      "source": "./kerryback/shoji",
+      "description": "A Quarto reveal.js slide theme in plum, pale gray and dusty blue, drawn from the Shoji PowerPoint design: 4px rules, a shallow title band, a narrow seam and tight margins, set at 28px on a 1280\u00d7720 canvas, with cards, callouts, stats, numbered steps, compared columns and half-bleed picture layouts. Suits text- and code-heavy decks."
     },
     {
       "name": "smithers",

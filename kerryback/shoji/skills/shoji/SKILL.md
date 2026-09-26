@@ -1,17 +1,17 @@
 ---
-name: shoji2
+name: shoji
 description: >-
-  Build a Quarto reveal.js slide deck in the Shoji 2 style — the plum, pale-gray
-  and dusty-blue Shoji theme with a slimmer frame and smaller type, so a slide
-  holds appreciably more: thin rules, a shallow title band, tight margins, plus
-  the same cards, callouts, stats, steps, and half-bleed picture layouts,
-  rendered to HTML and exported to PDF. Use when the user invokes /shoji2, asks
-  for a shoji2 deck by name, or is editing a deck already built with this theme.
-  For the original, roomier-framed version use the shoji skill; for a general
-  "make me slides" with no style named, prefer the pptx skill.
+  Build a Quarto reveal.js slide deck in the Shoji style — a plum, pale-gray and
+  dusty-blue theme derived from the PowerPoint design of the same name, with a
+  slim frame and small type so a slide holds a good deal of text or code: thin
+  rules, a shallow title band, tight margins, cards, callouts, stats, steps, and
+  half-bleed picture layouts, rendered to HTML and exported to PDF. Use when the
+  user invokes /shoji, asks for a shoji deck by name, or is editing a deck
+  already built with this theme. For a general "make me slides" with no style
+  named, prefer the pptx skill.
 ---
 
-# Shoji 2
+# Shoji
 
 Author a presentation as a Quarto reveal.js deck: Markdown in a `.qmd`, a
 vendored `.scss` theme, `quarto render` to a self-contained `.html`, decktape to
@@ -27,39 +27,29 @@ rectangles from those lines, which is why the layout classes exist: the source
 deck moves its title band and blocks around, and so should a deck built with
 this.
 
-## What Shoji 2 changes
+## The frame
 
-Shoji 2 is the same design with the frame pulled in and the type set down. On
-the same 1280×720 canvas:
+On a 1280×720 canvas:
 
-| | shoji | shoji2 |
-|---|---|---|
-| Rules and block edges | 6px | 4px |
-| Title band height | 137px | 108px |
-| Left seam | 102px (8%) | 72px (5.6%) |
-| Base rule | 626px (87%) | 660px (92%) |
-| Text margins, left / right / foot | 165 / 115 / 118 | 116 / 76 / 80 |
-| Root font size | 32px | 28px |
+| | |
+|---|---|
+| Rules and block edges | 4px |
+| Title band height | 108px |
+| Left seam | 72px (5.6%) |
+| Base rule | 660px (92%) |
+| Text margins, left / right / foot | 116 / 76 / 80 |
+| Root font size | 28px |
 
-The text area goes from 1000×425 to 1088×504 — 29% more room — and the smaller
-type puts roughly two-thirds again as much content on a slide before it
-overflows. The interior lines are untouched (the foot strip still splits at 38%,
-the picture layouts still meet at the panel's midpoint), so the proportions read
-as Shoji; only the frame's share of the canvas shrinks.
-
-Nothing else differs. The class vocabulary is identical, so an existing shoji
-deck converts by pointing `theme:` at `shoji2.scss` — then re-check every slide,
-because the type change reflows everything.
+That leaves a text area of 1088×504. The foot strip splits at 38% and the
+picture layouts meet at the panel's midpoint.
 
 ## When to use this vs. other deck skills
 
-- Use shoji2 when the user asks for it by name, or when editing a deck whose
-  front matter already points at `shoji2.scss`.
-- Use the `shoji` skill for the original: a heavier frame, larger type, less on
-  each slide. Reach for it when the deck is sparse and wants the air.
+- Use shoji when the user asks for it by name, or when editing a deck whose
+  front matter already points at `shoji.scss`.
 - Use the `pptx` skill for a general request with no style named, and always
   when the user needs a natively editable PowerPoint.
-- Shoji 2 suits text- and code-heavy academic decks that were fighting the
+- Shoji suits text- and code-heavy academic decks that were fighting the
   panel's edges: same quiet palette, appreciably more canvas.
 
 ## Prerequisites
@@ -76,7 +66,7 @@ Render first; only chase a missing tool if the render actually fails.
 Work in a folder that will be the deliverable, and put the theme beside the
 `.qmd` so the relative `theme:` resolves:
 
-- Copy `assets/shoji2.scss` into the deck folder.
+- Copy `assets/shoji.scss` into the deck folder.
 - Copy `assets/starter.qmd` and rename it, or write fresh front matter:
 
 ```
@@ -87,7 +77,7 @@ author: "Kerry Back"
 date: today
 format:
   revealjs:
-    theme: shoji2.scss
+    theme: shoji.scss
     width: 1280
     height: 720
     margin: 0
@@ -154,7 +144,7 @@ wants the finished deck, not the steps that produced it. If it flags a factual
 claim as suspect, fix the fact and stay silent about the rest.
 
 The authority it works from is
-`plugins/shoji2/skills/shoji2/references/what-not-to-do.md` in the user's
+`plugins/shoji/skills/shoji/references/what-not-to-do.md` in the user's
 skills repo — the catalogue of text that has been cut from these decks, with
 the replacement for each. Read it yourself before step 2 so there is less for
 the subagent to find.
@@ -263,8 +253,8 @@ PDF keeps the frame, the footer, and the slide numbers.
 - The palette is three colors. `.card-sage` and `.card-sand` exist for the rare
   fourth category; reaching for them often turns a quiet design loud.
 - Charts and diagrams as SVG or high-dpi PNG from matplotlib. The canvas is only
-  1280×720 CSS pixels but is presented full-screen. Figures may run to 470px tall
-  here, against 400px in shoji.
+  1280×720 CSS pixels but is presented full-screen. Figures may run to 470px
+  tall.
 - The extra room is for breathing space and for figures, not a licence to fill
   the slide. Body type is 28px on a canvas shown at a distance; a slide that uses
   every pixel of the wider panel is a slide nobody at the back can read.

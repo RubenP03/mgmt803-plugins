@@ -1,0 +1,9 @@
+{
+  "name": "shoji",
+  "version": "2.0.0",
+  "description": "A Quarto reveal.js slide theme in plum, pale gray and dusty blue, drawn from the Shoji PowerPoint design: 4px rules, a shallow title band, a narrow seam and tight margins, set at 28px on a 1280\u00d7720 canvas, with cards, callouts, stats, numbered steps, compared columns and half-bleed picture layouts. Suits text- and code-heavy decks.",
+  "author": {
+    "name": "Kerry Back"
+  },
+  "skills": "./skills/"
+}
