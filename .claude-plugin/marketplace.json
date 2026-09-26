@@ -6,6 +6,11 @@
   "description": "Plugins for MGMT 803: a draft critique, elegant PDFs, the shoji slide theme, Smithers, and narrated slide videos.",
   "plugins": [
     {
+      "name": "calendar-keeper",
+      "source": "./bb151-pixel/calendar-keeper",
+      "description": "Plan your week and edit Google Calendar across several calendars (work, school, a side job, personal) from rules you set once in a private profile on your computer. Keeps anything that isn't work off the work calendar, including the attendee trap that copies events onto your primary calendar; plans around work hours the calendar doesn't show; protects rest; proposes before editing; and checks its edits afterwards."
+    },
+    {
       "name": "critique",
       "source": "./kerryback/critique",
       "description": "Critique work Claude produced and say what to do about it. Parallel reviewer agents -- correctness traced back to the files that produced each number, clarity, a devil's advocate that reads the code rather than the prose, and a referee lane for academic papers that hands off to econ-review when it is installed. Every finding must carry located evidence, a consequence specific to this work, a proportionate repair, and a condition that would defeat it; Claude then argues against its own reviewers before showing you anything. Delivers an HTML guide that leads with the verdict and lays out the alternative paths forward -- narrow the claim, run one decisive check, reframe, redesign, or ship -- as choices with costs, not as a checklist. Heavyweight: it fans out multiple subagents."

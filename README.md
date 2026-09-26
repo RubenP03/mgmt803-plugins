@@ -24,6 +24,7 @@ session after installing so the plugin's skills load.
 
 | Plugin | What it does |
 | --- | --- |
+| `calendar-keeper@mgmt803` | Plans your week across several Google calendars from rules you set once, and keeps anything that isn't work off your work calendar. Your calendar details stay in a private profile on your computer. |
 | `critique@mgmt803` | Reviews work Claude produced and says what to do about it, with located evidence for every finding. Fans out several subagents. |
 | `elegant-pdf@mgmt803` | Flyers, programs, reports and handbooks as branded PDFs or JPEGs, rendered from a small HTML design system. |
 | `shoji@mgmt803` | A Quarto reveal.js slide theme in plum, pale gray and dusty blue, set for text- and code-heavy decks. |
