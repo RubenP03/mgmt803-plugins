@@ -29,6 +29,7 @@ session after installing so the plugin's skills load.
 | `shoji@mgmt803` | A Quarto reveal.js slide theme in plum, pale gray and dusty blue, set for text- and code-heavy decks. |
 | `smithers@mgmt803` | A local email and calendar desk over Gmail and Calendar. Drafts replies for you to send; never sends or deletes anything itself. |
 | `voiceover@mgmt803` | Turns a slide PDF into a narrated MP4 plus a transcript. Needs an ElevenLabs API key. |
+| `countdown@mgmt803` | A countdown page with no fixed look — Claude designs the colors, emoji, font and particle effect live for whatever occasion you type in. Needs an Anthropic API key. |
 
 ## Layout
 
@@ -38,6 +39,7 @@ points at it:
 ```
 kerryback/critique
 kerryback/voiceover
+jessica-george/countdown
 ...
 ```
 
