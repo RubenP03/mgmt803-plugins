@@ -11,6 +11,11 @@
       "description": "Plan your week and edit Google Calendar across several calendars (work, school, a side job, personal) from rules you set once in a private profile on your computer. Keeps anything that isn't work off the work calendar, including the attendee trap that copies events onto your primary calendar; plans around work hours the calendar doesn't show; protects rest; proposes before editing; and checks its edits afterwards."
     },
     {
+      "name": "syllabus-to-trello",
+      "source": "./bb151-pixel/syllabus-to-trello",
+      "description": "Turn course syllabi into a Trello card plan and matching Google Calendar reminders. Converts relative deadlines into real dates from confirmed anchors, sets personal targets ahead of the official deadlines, flags missing or stale dates, and proposes every card for your review before creating anything. After approval it creates the cards and calendar markers, verifies both, and writes a handoff summary. Your board and calendar details stay in a private profile on your computer."
+    },
+    {
       "name": "critique",
       "source": "./kerryback/critique",
       "description": "Critique work Claude produced and say what to do about it. Parallel reviewer agents -- correctness traced back to the files that produced each number, clarity, a devil's advocate that reads the code rather than the prose, and a referee lane for academic papers that hands off to econ-review when it is installed. Every finding must carry located evidence, a consequence specific to this work, a proportionate repair, and a condition that would defeat it; Claude then argues against its own reviewers before showing you anything. Delivers an HTML guide that leads with the verdict and lays out the alternative paths forward -- narrow the claim, run one decisive check, reframe, redesign, or ship -- as choices with costs, not as a checklist. Heavyweight: it fans out multiple subagents."
