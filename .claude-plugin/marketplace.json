@@ -34,6 +34,11 @@
       "name": "finance-app",
       "source": "./Jbeathard/finance-app",
       "description": "Scaffold a loan payment calculator web app: FastAPI backend computing monthly payment, total paid, and total interest from loan amount, rate, and term, with a matching form UI."
+    },
+    {
+      "name": "job-scout",
+      "source": "./bazingasc/job-scout",
+      "description": "Daily job-posting scout. Builds a profile from your resume and target jobs, searches current postings, scores each against your background, emails a digest of the best matches with key posting data, and recommends specific resume changes to compete better. Personal data stays in ~/job-scout/, never in the plugin."
     }
   ]
 }
