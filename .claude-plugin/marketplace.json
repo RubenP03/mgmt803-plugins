@@ -44,6 +44,11 @@
       "name": "countdown",
       "source": "./jessica-george/countdown",
       "description": "A countdown page with no fixed look: type an occasion and a date, and Claude designs the whole page live \u2014 colors, an emoji, a font and a particle effect (snow, confetti, floating, sparkle) that fit the occasion, using the real colors of a named school, team, brand or holiday when it recognizes one. Requires an ANTHROPIC_API_KEY."
+    },
+    {
+      "name": "density-weight-converter",
+      "source": "./HighLordLangford/density-weight-converter",
+      "description": "Scaffold a density-to-weight unit converter web app: a FastAPI backend and form UI that convert a density (g/cm3) and a volume (ft3) into a weight in pounds, with an optional tons-per-acre mode from a thickness and an acreage."
     }
   ]
 }
