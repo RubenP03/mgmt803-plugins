@@ -30,6 +30,7 @@ session after installing so the plugin's skills load.
 | `smithers@mgmt803` | A local email and calendar desk over Gmail and Calendar. Drafts replies for you to send; never sends or deletes anything itself. |
 | `voiceover@mgmt803` | Turns a slide PDF into a narrated MP4 plus a transcript. Needs an ElevenLabs API key. |
 | `countdown@mgmt803` | A countdown page with no fixed look — Claude designs the colors, emoji, font and particle effect live for whatever occasion you type in. Needs an Anthropic API key. |
+| `sn-lab@mgmt803` | Animates SN1/SN2 nucleophilic substitution mechanisms in a local app. Pick a substrate, nucleophile, and solvent (or use a suggested example); it predicts the mechanism and animates it next to an energy diagram. |
 
 ## Layout
 
