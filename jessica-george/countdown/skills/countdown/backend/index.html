@@ -153,7 +153,7 @@
     $("msg").textContent = "Designing your countdown…";
     try {
       const qs = new URLSearchParams({ target: target.toISOString(), occasion });
-      const res = await fetch("/api/countdown?" + qs);
+      const res = await fetch("api/countdown?" + qs);
       const data = await res.json();
       if (!res.ok) { $("out").hidden = true; $("msg").textContent = data.detail; return; }
       applyTheme(data.theme, target.getFullYear());
